@@ -1,0 +1,542 @@
+{
+ "vaishali": {
+  "name": "Vaishali",
+  "kind": "stay",
+  "phone": "9851043479",
+  "mobile": "9851043479",
+  "email": "info@hotelvaishali.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7166119",
+  "lon": "85.3111787"
+ },
+ "hotel-dolphin": {
+  "name": "Hotel Dolphin",
+  "kind": "stay",
+  "phone": "",
+  "mobile": "",
+  "email": "hoteldolphinguesthouse@gmail.com",
+  "address": "Gaa Hiti Marg, Thamel",
+  "lat": "27.7173793",
+  "lon": "85.3121267"
+ },
+ "hotel-river-holiday-inn": {
+  "name": "Hotel River Holiday Inn",
+  "kind": "stay",
+  "phone": "9851198315",
+  "mobile": "9851198315",
+  "email": "thakur77pokhrel@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7212679",
+  "lon": "85.308377"
+ },
+ "koohinoor-inn": {
+  "name": "Koohinoor Inn",
+  "kind": "stay",
+  "phone": "",
+  "mobile": "",
+  "email": "h-kohinoor@hotmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7101832",
+  "lon": "85.3138659"
+ },
+ "backpackers": {
+  "name": "Backpackers",
+  "kind": "stay",
+  "phone": "977-1-4225319",
+  "mobile": "",
+  "email": "hotelbackpacker@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7121545",
+  "lon": "85.3120383"
+ },
+ "biz-3479503199": {
+  "name": "सिटी डेन्टल क्लिनिक",
+  "kind": "health",
+  "phone": "4-222441",
+  "mobile": "",
+  "email": "ctmsdent@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7100662",
+  "lon": "85.3149062"
+ },
+ "prk": {
+  "name": "PRK",
+  "kind": "stay",
+  "phone": "4914911  4915955",
+  "mobile": "",
+  "email": "prkguesthouse@yahoo.com",
+  "address": "Phulbari street",
+  "lat": "27.722509",
+  "lon": "85.3632997"
+ },
+ "dragon-guesthouse": {
+  "name": "Dragon Guesthouse",
+  "kind": "stay",
+  "phone": "+977 15178162",
+  "mobile": "",
+  "email": "dragonguesth@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7252906",
+  "lon": "85.3610347"
+ },
+ "kasthamandap-travellers-home": {
+  "name": "kasthamandap  travellers  home ",
+  "kind": "stay",
+  "phone": "+9779813518975",
+  "mobile": "9813518975",
+  "email": "kthhostel@gmail.com",
+  "address": "Kaldhara Marg",
+  "lat": "27.716799",
+  "lon": "85.3074375"
+ },
+ "hotel-pilgrims": {
+  "name": "Hotel Pilgrims",
+  "kind": "stay",
+  "phone": "9851033428",
+  "mobile": "9851033428",
+  "email": "info@pilgrimshome.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7169931",
+  "lon": "85.3092726"
+ },
+ "second-home-hotel": {
+  "name": "Second Home Hotel",
+  "kind": "stay",
+  "phone": "+977 9768593188",
+  "mobile": "9768593188",
+  "email": "secondhomehotel38@gmail.com",
+  "address": "Samjhana Street, Kathmandu",
+  "lat": "27.7157278",
+  "lon": "85.3111413"
+ },
+ "mystic-vibes-fitness-studio": {
+  "name": "Mystic vibes fitness studio",
+  "kind": "fitness",
+  "phone": "+9779849466287",
+  "mobile": "9849466287",
+  "email": "mysticvibesktm@gmail.com",
+  "address": "naya basti marga",
+  "lat": "27.7257506",
+  "lon": "85.3320921"
+ },
+ "kathmandu-resort-hotel": {
+  "name": "Kathmandu Resort Hotel",
+  "kind": "stay",
+  "phone": "0097714701224",
+  "mobile": "",
+  "email": "ktmresorthotel@mos.om.np",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7152544",
+  "lon": "85.3108371"
+ },
+ "bodhi-inn": {
+  "name": "Bodhi Inn",
+  "kind": "stay",
+  "phone": "+97714265298",
+  "mobile": "",
+  "email": "bodhinn@gmail.com",
+  "address": "Thamel Marg",
+  "lat": "27.7117158",
+  "lon": "85.3115044"
+ },
+ "shangrila-lodge": {
+  "name": "Shangrila Lodge",
+  "kind": "stay",
+  "phone": "9813888179",
+  "mobile": "9813888179",
+  "email": "radiusgyanu@yahoo.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7158797",
+  "lon": "85.310944"
+ },
+ "hotel-osho-home": {
+  "name": "Hotel Osho Home",
+  "kind": "stay",
+  "phone": "9851056875",
+  "mobile": "9851056875",
+  "email": "hoteloshohome@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7116247",
+  "lon": "85.3129362"
+ },
+ "biz-4938348723": {
+  "name": "क्लिनिक स्वास्थ्य सेवा केन्द्र",
+  "kind": "health",
+  "phone": "+97714356170",
+  "mobile": "",
+  "email": "clihcc@gmail.com",
+  "address": "Balaju Ring Road Track Right",
+  "lat": "27.7267652",
+  "lon": "85.3050104"
+ },
+ "mitra-garden-inn": {
+  "name": "Mitra Garden Inn",
+  "kind": "stay",
+  "phone": "+977 984-1171095",
+  "mobile": "9841171095",
+  "email": "dbagale55@gmail.com",
+  "address": "Samjhana Street, Kathmandu",
+  "lat": "27.7155419",
+  "lon": "85.3111753"
+ },
+ "fat-farm-hostel-kitchen": {
+  "name": "Fat Farm Hostel & Kitchen",
+  "kind": "stay",
+  "phone": "+9779860180990",
+  "mobile": "9860180990",
+  "email": "thapa.l.shiva@gmail.com",
+  "address": "Jyatha Street",
+  "lat": "27.7106369",
+  "lon": "85.3130796"
+ },
+ "biz-7150534786": {
+  "name": "ओप्टिक आँखा, क्लिनिक र ओप्टिकल पसल",
+  "kind": "health",
+  "phone": "9851063745",
+  "mobile": "9851063745",
+  "email": "opticeyesnep@gmail.com",
+  "address": "Chabhil-Boudha-Jorpati Road",
+  "lat": "27.7183449",
+  "lon": "85.3493164"
+ },
+ "new-hotel-panda": {
+  "name": "New Hotel Panda",
+  "kind": "stay",
+  "phone": "9851020705",
+  "mobile": "9851020705",
+  "email": "newhotelpanda@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.715942",
+  "lon": "85.307769"
+ },
+ "hotel-le-himalya": {
+  "name": "Hotel Le Himalya",
+  "kind": "stay",
+  "phone": "\"9803008429",
+  "mobile": "9803008429",
+  "email": "info@lehimalaya.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.721523",
+  "lon": "85.3199838"
+ },
+ "hotel-everest-mount-holiday": {
+  "name": "Hotel Everest Mount Holiday",
+  "kind": "stay",
+  "phone": "9851158073",
+  "mobile": "9851158073",
+  "email": "hotelemholiday@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7115803",
+  "lon": "85.309093"
+ },
+ "airport-hotel": {
+  "name": "Airport Hotel",
+  "kind": "stay",
+  "phone": "9851010745",
+  "mobile": "9851010745",
+  "email": "info@airporthotel.com.np",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7019477",
+  "lon": "85.3519122"
+ },
+ "hotel-landmark-kathmandu": {
+  "name": "Hotel Landmark Kathmandu",
+  "kind": "stay",
+  "phone": "9851229890",
+  "mobile": "9851229890",
+  "email": "info@landmark.com.np",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7129726",
+  "lon": "85.3191443"
+ },
+ "hotel-shivam-plaza-pvt-ltd": {
+  "name": "Hotel Shivam Plaza Pvt. Ltd.",
+  "kind": "stay",
+  "phone": "9851089904",
+  "mobile": "9851089904",
+  "email": "htlcrownplaza@yahoo.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7042183",
+  "lon": "85.3462155"
+ },
+ "hotel-thorong-peak": {
+  "name": "Hotel Thorong Peak",
+  "kind": "stay",
+  "phone": "9801097661",
+  "mobile": "9801097661",
+  "email": "thorongpeak@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7134327",
+  "lon": "85.3109206"
+ },
+ "kathmandu-suite-home": {
+  "name": "Kathmandu Suite Home",
+  "kind": "stay",
+  "phone": "9851126351",
+  "mobile": "9851126351",
+  "email": "sales@kathmandusuitehome.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7150349",
+  "lon": "85.3069764"
+ },
+ "skyline-hotel": {
+  "name": "Skyline Hotel",
+  "kind": "stay",
+  "phone": "9841797644",
+  "mobile": "9841797644",
+  "email": "skylinehotelnepal@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7155035",
+  "lon": "85.3114635"
+ },
+ "shiva-tirupati-hotel": {
+  "name": "Shiva Tirupati Hotel",
+  "kind": "stay",
+  "phone": "9851243678",
+  "mobile": "9851243678",
+  "email": "hotelshivatirupati@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7080015",
+  "lon": "85.3222489"
+ },
+ "hotel-festoon": {
+  "name": "Hotel Festoon",
+  "kind": "stay",
+  "phone": "9843755333",
+  "mobile": "9843755333",
+  "email": "hotelfestoon@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.717163",
+  "lon": "85.3100623"
+ },
+ "hotel-lily": {
+  "name": "Hotel Lily",
+  "kind": "stay",
+  "phone": "9851066279",
+  "mobile": "9851066279",
+  "email": "kajibabu2008@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7169285",
+  "lon": "85.3095064"
+ },
+ "hotel-narayana": {
+  "name": "Hotel Narayana",
+  "kind": "stay",
+  "phone": "9802031523",
+  "mobile": "9802031523",
+  "email": "nepal@hotelnarayana.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7057242",
+  "lon": "85.3489275"
+ },
+ "comfort-inn-hotel-and-apartments": {
+  "name": "Comfort Inn Hotel and Apartments",
+  "kind": "stay",
+  "phone": "9851117535",
+  "mobile": "9851117535",
+  "email": "comfortinnktm@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.6877463",
+  "lon": "85.2980112"
+ },
+ "hotel-ananda-pashupati-p-ltd": {
+  "name": "Hotel Ananda Pashupati P Ltd",
+  "kind": "stay",
+  "phone": "9818366324",
+  "mobile": "9818366324",
+  "email": "info@anandapashupati.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7041117",
+  "lon": "85.3502807"
+ },
+ "platinum-hotel": {
+  "name": "Platinum Hotel",
+  "kind": "stay",
+  "phone": "9851097039",
+  "mobile": "9851097039",
+  "email": "info@platinumhotel.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.6983413",
+  "lon": "85.2914407"
+ },
+ "rosebud-hotel-resort": {
+  "name": "Rosebud Hotel & Resort",
+  "kind": "stay",
+  "phone": "+977 985-1090483",
+  "mobile": "9851090483",
+  "email": "rosebudhotelkathmandu@gmail.com",
+  "address": "Purano Dhalko Marg",
+  "lat": "27.7114493",
+  "lon": "85.3059736"
+ },
+ "annapurna-guest-house": {
+  "name": "Annapurna Guest house",
+  "kind": "stay",
+  "phone": "+977-1-4417461",
+  "mobile": "",
+  "email": "info@annapurnagh.com",
+  "address": "Bhagwanbahal, Kathmandu",
+  "lat": "27.7173628",
+  "lon": "85.3123582"
+ },
+ "hotel-travelers-home": {
+  "name": "Hotel Travelers Home",
+  "kind": "stay",
+  "phone": "14233802",
+  "mobile": "",
+  "email": "sales@travelershome.com.np",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7123367",
+  "lon": "85.3108452"
+ },
+ "thamel-apartment": {
+  "name": "Thamel Apartment",
+  "kind": "stay",
+  "phone": "14220353",
+  "mobile": "",
+  "email": "thamel.apartments@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7122532",
+  "lon": "85.3111485"
+ },
+ "biz-9956485643": {
+  "name": "होटल सनशाइन भ्यू तथा रेस्टुरेन्ट",
+  "kind": "stay",
+  "phone": "9849471309",
+  "mobile": "9849471309",
+  "email": "lamashyam62@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.6749243",
+  "lon": "85.353367"
+ },
+ "lucent-skin-care-and-hair-clinic": {
+  "name": "Lucent Skin Care And Hair Clinic",
+  "kind": "health",
+  "phone": "016630641",
+  "mobile": "",
+  "email": "lucentskinclinic@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.674269",
+  "lon": "85.3600368"
+ },
+ "biz-9999286879": {
+  "name": "दिति वेलनेस क्लिनिक र डिगोनेस्टिक सेन्टर",
+  "kind": "health",
+  "phone": "9841002526",
+  "mobile": "9841002526",
+  "email": "ditiwellnessclinic@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.6702188",
+  "lon": "85.3539854"
+ },
+ "family-dental-wellbeing": {
+  "name": "Family Dental Wellbeing",
+  "kind": "health",
+  "phone": "9823619605",
+  "mobile": "9823619605",
+  "email": "familydentalwellbeing2022@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.6730125",
+  "lon": "85.3548762"
+ },
+ "the-hostel-aawas": {
+  "name": "The Hostel Aawas",
+  "kind": "stay",
+  "phone": "+977-9823515790",
+  "mobile": "9823515790",
+  "email": "hostelaawas@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7376473",
+  "lon": "85.3209604"
+ },
+ "ananda-bhumi-hostel": {
+  "name": "Ananda Bhumi Hostel",
+  "kind": "stay",
+  "phone": "9841091092",
+  "mobile": "9841091092",
+  "email": "rabing0101@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.6804211",
+  "lon": "85.3454149"
+ },
+ "hotel-sweet-dreams": {
+  "name": "Hotel Sweet Dreams",
+  "kind": "stay",
+  "phone": "+977 1-4513815",
+  "mobile": "",
+  "email": "hotelsweetdreamsthamelnepal@gmail.com",
+  "address": "Samjhana Street, Kathmandu",
+  "lat": "27.7157381",
+  "lon": "85.3110763"
+ },
+ "biz-13206748901": {
+  "name": "इको होम काठमाडौं होटल (रानीवन)",
+  "kind": "stay",
+  "phone": "+977 9846356490",
+  "mobile": "9846356490",
+  "email": "ecoktmhotel@gmail.com",
+  "address": "जामाचो मार्ग",
+  "lat": "27.738233",
+  "lon": "85.2898057"
+ },
+ "avataar-kathmandu-hotel": {
+  "name": "Avataar Kathmandu Hotel",
+  "kind": "stay",
+  "phone": "9851035908",
+  "mobile": "9851035908",
+  "email": "info@avataarkathmanduhotel.com",
+  "address": "Z Street, Kathmandu",
+  "lat": "27.7168803",
+  "lon": "85.309737"
+ },
+ "national-dental-hosptial": {
+  "name": "National Dental Hosptial",
+  "kind": "health",
+  "phone": "01-4437252-4433697-4436311",
+  "mobile": "",
+  "email": "ndh@mail.com.np",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7289267",
+  "lon": "85.326022"
+ },
+ "sathi-guest-house": {
+  "name": "Sathi Guest House",
+  "kind": "stay",
+  "phone": "+9779808834249",
+  "mobile": "9808834249",
+  "email": "info@sathiguesthouse.com",
+  "address": "Swoyambhu Kimdol-15, Kathmandu",
+  "lat": "27.7119773",
+  "lon": "85.2884869"
+ },
+ "himalayan-sherpa-inn": {
+  "name": "Himalayan Sherpa INN",
+  "kind": "stay",
+  "phone": "",
+  "mobile": "",
+  "email": "himalayansherpainn@gmail.com",
+  "address": "Mahankal Road, kathmandu",
+  "lat": "27.7241925",
+  "lon": "85.3584096"
+ },
+ "royal-empire-boutique-hotel": {
+  "name": "Royal Empire Boutique Hotel",
+  "kind": "stay",
+  "phone": "+977-1-4000538",
+  "mobile": "",
+  "email": "info@royalempire.com.np",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7229146",
+  "lon": "85.3286017"
+ },
+ "kathmandu-friendly-home": {
+  "name": "Kathmandu Friendly Home",
+  "kind": "stay",
+  "phone": "9851076340",
+  "mobile": "9851076340",
+  "email": "ktmfriendlyhome@gmail.com",
+  "address": "Paknajol Marg, Kathmandu",
+  "lat": "27.7157247",
+  "lon": "85.3077194"
+ }
+}

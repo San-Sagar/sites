@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Website preview</title>
+<style>
+:root{--ink:#1b1f24;--mute:#5b6470;--bg:#faf8f4;--card:#fff;--line:#e7e2d8;--accent:#b4472b;--accent2:#1f5f5b}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 Georgia,"Times New Roman",serif;color:var(--ink);background:var(--bg)}
+.bar{background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:10px 16px;text-align:center}
+.bar a{color:#ffd27a}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;font-family:system-ui,sans-serif}
+.brand{font:700 22px/1.2 Georgia,serif}
+nav a{color:var(--mute);text-decoration:none;margin-left:16px;font-size:15px}
+.hero{border-radius:18px;padding:72px 28px;color:#fff;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--accent2),#0e2f2d 60%,var(--accent))}
+.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.05;margin:0 0 12px;letter-spacing:-.01em}
+.hero p{font:18px/1.5 system-ui,sans-serif;max-width:560px;opacity:.92}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.btn{font:600 16px system-ui,sans-serif;padding:13px 20px;border-radius:10px;text-decoration:none;display:inline-block}
+.wa{background:#25d366;color:#08310f}.call{background:#fff;color:#111}.mail{background:transparent;color:#fff;border:1px solid #ffffff88}
+section{padding:46px 0}h2{font-size:30px;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}@media(max-width:820px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;font-family:system-ui,sans-serif}
+.card h3{font:700 19px Georgia,serif;margin:0 0 6px}.card p{margin:0;color:var(--mute)}
+.ph{height:150px;border-radius:10px;margin-bottom:14px;background:repeating-linear-gradient(45deg,#efe9dd,#efe9dd 10px,#e6dfd0 10px,#e6dfd0 20px);display:grid;place-items:center;color:#8a8170;font-size:13px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}@media(max-width:820px){.two{grid-template-columns:1fr}}
+iframe{width:100%;height:320px;border:0;border-radius:14px}
+form{display:grid;gap:10px;font-family:system-ui,sans-serif}input,textarea{font:inherit;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fff}
+button{font:600 16px system-ui;padding:13px;border:0;border-radius:10px;background:var(--accent);color:#fff;cursor:pointer}
+footer{padding:30px 0 60px;color:var(--mute);font:14px system-ui,sans-serif;border-top:1px solid var(--line)}
+.float{position:fixed;right:16px;bottom:16px;background:#25d366;color:#08310f;border-radius:999px;padding:14px 18px;font:700 15px system-ui;text-decoration:none;box-shadow:0 6px 20px #0003}
+#missing{padding:80px 16px;text-align:center;font-family:system-ui}
+</style>
+</head>
+<body>
+<div class="bar">This is a free <b>design preview</b> made by Sagar (web developer, Kathmandu) and is not the business's official website. Photos are placeholders. <a href="./">Get your own website →</a></div>
+<div id="app"></div>
+<script>
+const K = {
+ stay:{tag:"Comfortable rooms in the heart of Kathmandu",lead:"Clean, friendly and easy to reach. Book directly with us for the best rate, with no booking-site fees.",
+   s:"Rooms",items:[["Standard Room","Cosy double or twin, private bathroom, hot shower, Wi-Fi."],["Deluxe Room","More space, city view, breakfast available."],["Family Room","Room for 3-4 guests, ideal for families and groups."]],
+   x:"Why stay with us",xs:[["Direct booking","Message us on WhatsApp and get our best price."],["Local help","Airport pickup, trekking and tour arrangements."],["Great location","Walking distance to restaurants, shops and sights."]],form:"Booking enquiry",f:["Check-in date","Check-out date","Guests"]},
+ health:{tag:"Caring, professional treatment close to home",lead:"Experienced doctors, modern equipment and short waiting times. Book your appointment in a minute.",
+   s:"Services",items:[["Consultation","Check-ups and expert advice for the whole family."],["Treatment","Modern procedures done with care and hygiene."],["Follow-up","Reminders and easy follow-up visits."]],
+   x:"Why patients choose us",xs:[["Experienced team","Qualified and friendly professionals."],["Clean & safe","Strict hygiene and sterilisation."],["Easy booking","Call or WhatsApp to book a time."]],form:"Book an appointment",f:["Preferred date","Preferred time","Reason for visit"]},
+ beauty:{tag:"Look and feel your best",lead:"Hair, skin and beauty services by skilled stylists. Book on WhatsApp in seconds.",
+   s:"Services",items:[["Hair","Cuts, colour, treatments and styling."],["Skin","Facials, clean-ups and skin care."],["Bridal & party","Make-up and packages for special days."]],
+   x:"Why clients love us",xs:[["Skilled team","Trained, up-to-date stylists."],["Quality products","Trusted brands only."],["Easy booking","WhatsApp us and get a confirmed slot."]],form:"Book a slot",f:["Preferred date","Preferred time","Service"]},
+ fitness:{tag:"Train hard. Feel great.",lead:"Classes, coaching and a friendly community. Come for a free trial session.",
+   s:"Programs",items:[["Strength","Coached strength and conditioning."],["Classes","Yoga, Zumba and group workouts."],["Personal training","One-to-one plans that fit your goals."]],
+   x:"Why join us",xs:[["Coaches","Certified, friendly trainers."],["Flexible","Morning and evening timings."],["Free trial","Try a session before you join."]],form:"Book a free trial",f:["Preferred date","Preferred time","Goal"]}
+};
+const esc = s => String(s||"").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const id = new URLSearchParams(location.search).get("id");
+fetch("data.json").then(r=>r.json()).then(D=>{
+ const b = D[id]; const app = document.getElementById("app");
+ if(!b){ app.innerHTML='<div id="missing"><h2>Preview not found</h2><p><a href="./">See our website offer</a></p></div>'; return; }
+ const k = K[b.kind] || K.stay; document.title = b.name + " | Website preview";
+ const wa = b.mobile ? `https://wa.me/977${b.mobile}` : ""; const tel = b.phone ? `tel:${b.phone.replace(/\s/g,"")}` : "";
+ const lat = parseFloat(b.lat), lon = parseFloat(b.lon), d = 0.004;
+ const map = isFinite(lat) ? `<iframe loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=${lon-d},${lat-d},${lon+d},${lat+d}&layer=mapnik&marker=${lat},${lon}"></iframe>` : "";
+ app.innerHTML = `
+ <div class="wrap">
+  <nav><div class="brand">${esc(b.name)}</div><div><a href="#s">${k.s}</a><a href="#find">Find us</a><a href="#book">Book</a></div></nav>
+  <div class="hero"><h1>${esc(b.name)}</h1><p>${k.tag}. ${k.lead}</p>
+   <div class="cta">${wa?`<a class="btn wa" href="${wa}">WhatsApp us</a>`:""}${tel?`<a class="btn call" href="${tel}">Call ${esc(b.phone)}</a>`:""}<a class="btn mail" href="#book">${k.form}</a></div></div>
+  <section id="s"><h2>${k.s}</h2><div class="grid">${k.items.map(i=>`<div class="card"><div class="ph">your photo here</div><h3>${i[0]}</h3><p>${i[1]}</p></div>`).join("")}</div></section>
+  <section><h2>${k.x}</h2><div class="grid">${k.xs.map(i=>`<div class="card"><h3>${i[0]}</h3><p>${i[1]}</p></div>`).join("")}</div></section>
+  <section id="find" class="two"><div><h2>Find us</h2><p style="font-family:system-ui">${esc(b.address)}</p>${tel?`<p style="font-family:system-ui">Phone: <a href="${tel}">${esc(b.phone)}</a></p>`:""}</div><div>${map}</div></section>
+  <section id="book"><h2>${k.form}</h2>
+   <form onsubmit="event.preventDefault();alert('In the live website this sends the request straight to your WhatsApp / email.');">
+    <input placeholder="Your name" required><input placeholder="Phone or email" required>${k.f.map(f=>`<input placeholder="${f}">`).join("")}<textarea rows="3" placeholder="Message"></textarea><button>Send request</button></form></section>
+  <footer>© ${new Date().getFullYear()} ${esc(b.name)} · Design preview by Sagar</footer>
+ </div>${wa?`<a class="float" href="${wa}">WhatsApp</a>`:""}`;
+});
+</script>
+</body>
+</html>

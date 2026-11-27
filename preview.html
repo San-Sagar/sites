@@ -92,7 +92,9 @@ const P = {
  stay:{hero:["stay-2","stay-3","stay-6","stay-7"],cards:["stay-1","stay-4","stay-2"],gal:["kathmandu-0","stay-3","kathmandu-5","stay-7","kathmandu-4"]},
  health:{hero:["health-4","health-0","health-6"],cards:["health-0","health-3","health-7"],gal:["health-4","health-1","health-2","health-6","health-5"]},
  beauty:{hero:["beauty-2","beauty-4"],cards:["beauty-2","beauty-3","beauty-4"],gal:["beauty-4","beauty-2","beauty-3","beauty-2","beauty-4"]},
- fitness:{hero:["fitness-0","fitness-1"],cards:["fitness-1","fitness-0","fitness-1"],gal:["fitness-0","fitness-1","fitness-0","fitness-1","fitness-0"]}
+ fitness:{hero:["fitness-0","fitness-1"],cards:["fitness-1","fitness-0","fitness-1"],gal:["fitness-0","fitness-1","fitness-0","fitness-1","fitness-0"]},
+ food:{hero:["food-2","food-1","food-4"],cards:["food-5","food-8","food-6"],gal:["food-2","food-5","food-9","food-11","food-4"]},
+ retail:{hero:["retail-11","retail-10","retail-9"],cards:["retail-5","retail-6","retail-11"],gal:["retail-10","retail-7","retail-5","retail-9","retail-6"]}
 };
 const K = {
  stay:{label:"Hotel · Kathmandu",tag:"Your home in the heart of Kathmandu",lead:"Clean, comfortable rooms, warm Nepali hospitality, and the best rates when you book directly with us.",
@@ -110,6 +112,16 @@ const K = {
   items:[["Hair","Cuts, colour, smoothening and treatments."],["Skin","Facials, clean-ups and glow treatments."],["Bridal & party","Make-up and packages for your big day."]],unit:"from",
   am:[["user","Skilled stylists","Trained and up to date"],["star","Quality products","Trusted brands only"],["cal","Easy booking","WhatsApp us for a slot"],["shield","Hygienic","Clean tools for every client"],["clock","Open late","Evening slots available"],["map","Easy to find","Central location"]],
   form:"Book a slot",f:[["Preferred date","date"],["Preferred time","time"],["Service","text"]],book:"Request slot"},
+ food:{label:"Restaurant · Kathmandu",tag:"Good food, warm welcome",lead:"Fresh dishes cooked to order, a friendly team and a table waiting for you. Reserve or order on WhatsApp.",
+  sec:"Menu",sech:"What we're known for",secl:"A taste of our menu. Prices and today's specials are always up to date on WhatsApp.",
+  items:[["House specials","Our most-loved dishes, made fresh every day."],["Momo & Nepali sets","Steamed, fried or jhol momo, dal bhat sets and more."],["Coffee & bakery","Fresh coffee, tea and baked goods all day."]],unit:"from",
+  am:[["clock","Open daily","Breakfast to dinner"],["phone","Takeaway & delivery","Order ahead on WhatsApp"],["user","Groups welcome","Parties and events"],["wifi","Free Wi-Fi","Stay and work"],["star","Fresh ingredients","Cooked to order"],["map","Easy to find","Central location"]],
+  form:"Reserve a table",f:[["Date","date"],["Time","time"],["People","number"]],book:"Request reservation"},
+ retail:{label:"Shop · Kathmandu",tag:"Handmade in Nepal",lead:"Authentic crafts, jewellery and textiles. Visit the shop or order on WhatsApp, with worldwide shipping on request.",
+  sec:"Collection",sech:"Browse the collection",secl:"A few highlights from the shop. Ask on WhatsApp for prices, sizes and colours.",
+  items:[["Signature pieces","Our best-selling handmade items."],["Jewellery & accessories","Silver, beads and traditional designs."],["Gifts & home","Singing bowls, textiles and keepsakes."]],unit:"from",
+  am:[["star","Authentic & handmade","Sourced from local artisans"],["map","Worldwide shipping","Ask for a quote"],["shield","Quality checked","Every piece inspected"],["phone","Order on WhatsApp","Photos and prices on request"],["user","Wholesale welcome","Bulk and export orders"],["clock","Open daily","Visit the shop"]],
+  form:"Ask about an item",f:[["Item","text"],["Quantity","number"],["Country","text"]],book:"Send enquiry"},
  fitness:{label:"Gym · Kathmandu",tag:"Stronger every week",lead:"Coaching, classes and a friendly community. Come in for a free trial session.",
   sec:"Programs",sech:"Train your way",secl:"Strength, classes or one-to-one coaching. Start with a free trial.",
   items:[["Strength training","Coached strength and conditioning for every level."],["Group classes","Yoga, Zumba, HIIT and more."],["Personal training","One-to-one plans built around your goals."]],unit:"per month",

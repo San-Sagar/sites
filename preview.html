@@ -66,6 +66,7 @@ footer .logo{color:#fff}.cred{font-size:11px;opacity:.6;margin-top:18px;line-hei
 .fab svg{width:30px;height:30px;color:#fff}
 .owner{position:fixed;left:0;right:0;bottom:0;z-index:40;background:#ffcf6e;color:#1a1306;padding:12px 16px;display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;font-size:14px;font-weight:600;box-shadow:0 -6px 20px rgba(0,0,0,.12)}
 .owner a{background:#1a1306;color:#fff;padding:8px 14px;border-radius:999px;text-decoration:none;white-space:nowrap}
+@media(max-width:600px){.owner{font-size:12.5px;padding:8px 12px;gap:8px;flex-wrap:nowrap;justify-content:space-between;text-align:left}.owner a{padding:7px 12px}.fab{bottom:74px;width:52px;height:52px}.pbar{font-size:11.5px;padding:6px 12px}}
 #missing{padding:120px 16px;text-align:center}
 </style>
 </head>
@@ -116,10 +117,11 @@ const K = {
   form:"Book a free trial",f:[["Preferred date","date"],["Preferred time","time"],["Goal","text"]],book:"Book free trial"}
 };
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const img = (n, alt) => `<img src="img/${n}.jpg" alt="${esc(alt)}" loading="lazy">`;
+const img = (n, alt, eager) => `<img src="img/${n}.jpg" alt="${esc(alt)}" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'}>`;
+const tidy = s => (s === s.toLowerCase() || s === s.toUpperCase()) ? s.toLowerCase().replace(/(^|[\s(&-])([a-z])/g, (m, a, c) => a + c.toUpperCase()) : s;
 const id = new URLSearchParams(location.search).get("id");
 Promise.all([fetch("data.json").then(r=>r.json()), fetch("photos.json").then(r=>r.json()).catch(()=>({}))]).then(([D, PH])=>{
- const b = D[id], app = document.getElementById("app");
+ const b = D[id] ? {...D[id], name: tidy(D[id].name)} : null, app = document.getElementById("app");
  if(!b){ app.innerHTML = '<div id="missing"><h2 class="serif">Preview not found</h2><p><a href="./">See how it works</a></p></div>'; return; }
  const k = K[b.kind] || K.stay, p = P[b.kind] || P.stay;
  document.title = b.name + " | Official website preview";
@@ -134,9 +136,9 @@ Promise.all([fetch("data.json").then(r=>r.json()), fetch("photos.json").then(r=>
  <header><div class="nav"><div class="logo">${esc(b.name)}<small>${k.label}</small></div>
   <nav class="links"><a href="#s">${k.sec}</a><a href="#why">Why us</a><a href="#find">Location</a><a href="#book">${k.form}</a></nav>
   ${wa?`<a class="btn b-wa" href="${wa}">${I.wa.replace('<svg','<svg width="18" height="18"')} WhatsApp</a>`:(tel?`<a class="btn b-dark" href="${tel}">Call us</a>`:"")}</div></header>
- <div class="hero">${img(hero, b.name)}<div class="in">
+ <div class="hero">${img(hero, b.name, true)}<div class="in">
   <div class="chip">${I.map.replace('<svg','<svg width="16" height="16"')} ${esc(b.address)}</div>
-  <h1>${esc(b.name)}</h1><p>${k.tag}. ${k.lead}</p>
+  <h1>${esc(b.name)}</h1><p>${k.tag}${/[.!?]$/.test(k.tag) ? "" : "."} ${k.lead}</p>
   <div class="cta">${wa?`<a class="btn b-wa" href="${wa}">${I.wa.replace('<svg','<svg width="18" height="18"')} Book on WhatsApp</a>`:""}${tel?`<a class="btn b-light" href="${tel}">Call ${esc(b.phone)}</a>`:""}<a class="btn b-ghost" href="#book">${k.form}</a></div></div></div>
  <section id="s"><div class="wrap"><p class="eyebrow">${k.sec}</p><h2>${k.sech}</h2><p class="lead">${k.secl}</p>
   <div class="grid3">${k.items.map((it,i)=>`<div class="card">${img(p.cards[i%p.cards.length], it[0])}<div class="b"><h3>${it[0]}</h3><p>${it[1]}</p>
@@ -161,7 +163,7 @@ Promise.all([fetch("data.json").then(r=>r.json()), fetch("photos.json").then(r=>
  <footer><div class="wrap"><div class="logo">${esc(b.name)}</div><p>${esc(b.address)}${b.phone?" · "+esc(b.phone):""}</p>
   <p>© ${new Date().getFullYear()} ${esc(b.name)}. Website preview by Sagar, Kathmandu.</p><div class="cred">Placeholder photos from Wikimedia Commons: ${credits}</div></div></footer>
  ${wa?`<a class="fab" href="${wa}" aria-label="WhatsApp">${I.wa}</a>`:""}
- <div class="owner">Owner of ${esc(b.name)}? This site can go live today. You pay nothing until you're happy with it. <a href="./?from=${encodeURIComponent(id)}">Make it mine →</a></div>`;
+ <div class="owner"><span>Owner of ${esc(b.name)}? This can go live today. Pay nothing until you're happy.</span> <a href="./?from=${encodeURIComponent(id)}">Make it mine →</a></div>`;
  document.getElementById("f").addEventListener("submit", e=>{
   e.preventDefault(); const fd = new FormData(e.target);
   const lines = [`Hello ${b.name}, I'd like to ${k.form.toLowerCase()}.`]; for (const [kk,v] of fd) if (v) lines.push(`${kk}: ${v}`);

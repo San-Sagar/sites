@@ -5,75 +5,169 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Website preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#1b1f24;--mute:#5b6470;--bg:#faf8f4;--card:#fff;--line:#e7e2d8;--accent:#b4472b;--accent2:#1f5f5b}
-*{box-sizing:border-box}body{margin:0;font:16px/1.6 Georgia,"Times New Roman",serif;color:var(--ink);background:var(--bg)}
-.bar{background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:10px 16px;text-align:center}
-.bar a{color:#ffd27a}
-.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
-nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;font-family:system-ui,sans-serif}
-.brand{font:700 22px/1.2 Georgia,serif}
-nav a{color:var(--mute);text-decoration:none;margin-left:16px;font-size:15px}
-.hero{border-radius:18px;padding:72px 28px;color:#fff;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--accent2),#0e2f2d 60%,var(--accent))}
-.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.05;margin:0 0 12px;letter-spacing:-.01em}
-.hero p{font:18px/1.5 system-ui,sans-serif;max-width:560px;opacity:.92}
-.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.btn{font:600 16px system-ui,sans-serif;padding:13px 20px;border-radius:10px;text-decoration:none;display:inline-block}
-.wa{background:#25d366;color:#08310f}.call{background:#fff;color:#111}.mail{background:transparent;color:#fff;border:1px solid #ffffff88}
-section{padding:46px 0}h2{font-size:30px;margin:0 0 18px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}@media(max-width:820px){.grid{grid-template-columns:1fr}}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;font-family:system-ui,sans-serif}
-.card h3{font:700 19px Georgia,serif;margin:0 0 6px}.card p{margin:0;color:var(--mute)}
-.ph{height:150px;border-radius:10px;margin-bottom:14px;background:repeating-linear-gradient(45deg,#efe9dd,#efe9dd 10px,#e6dfd0 10px,#e6dfd0 20px);display:grid;place-items:center;color:#8a8170;font-size:13px}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}@media(max-width:820px){.two{grid-template-columns:1fr}}
-iframe{width:100%;height:320px;border:0;border-radius:14px}
-form{display:grid;gap:10px;font-family:system-ui,sans-serif}input,textarea{font:inherit;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fff}
-button{font:600 16px system-ui;padding:13px;border:0;border-radius:10px;background:var(--accent);color:#fff;cursor:pointer}
-footer{padding:30px 0 60px;color:var(--mute);font:14px system-ui,sans-serif;border-top:1px solid var(--line)}
-.float{position:fixed;right:16px;bottom:16px;background:#25d366;color:#08310f;border-radius:999px;padding:14px 18px;font:700 15px system-ui;text-decoration:none;box-shadow:0 6px 20px #0003}
-#missing{padding:80px 16px;text-align:center;font-family:system-ui}
+:root{--ink:#16181d;--mute:#5d6470;--bg:#fbf9f5;--card:#fff;--line:#ece6db;--brand:#9c3d22;--brand2:#14473f;--gold:#c99a3b;--shadow:0 10px 30px rgba(20,20,30,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.65 Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+img{display:block;max-width:100%}
+a{color:inherit}
+.serif{font-family:Fraunces,Georgia,serif}
+.pbar{background:#0f1115;color:#e9e6df;font-size:13px;padding:8px 16px;text-align:center}
+.pbar b{color:#fff}.pbar a{color:#ffcf6e;font-weight:600}
+header{position:sticky;top:0;z-index:20;background:rgba(251,249,245,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{max-width:1160px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{font:700 20px/1.1 Fraunces,serif;letter-spacing:-.01em}
+.logo small{display:block;font:500 11px Inter,sans-serif;color:var(--mute);letter-spacing:.12em;text-transform:uppercase;margin-top:3px}
+.links{display:flex;gap:22px;font-size:14px;font-weight:500}.links a{text-decoration:none;color:var(--mute)}.links a:hover{color:var(--ink)}
+@media(max-width:760px){.links{display:none}}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:12px 18px;border-radius:999px;text-decoration:none;border:0;cursor:pointer}
+.b-wa{background:#25d366;color:#06351a}.b-dark{background:var(--ink);color:#fff}.b-light{background:#fff;color:var(--ink)}.b-ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.4)}
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(0,0,0,.25) 40%,rgba(8,10,14,.82) 100%)}
+.hero .in{position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:0 16px 56px;width:100%}
+.chip{display:inline-flex;gap:6px;align-items:center;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:6px 12px;border-radius:999px;font-size:13px;margin-bottom:16px}
+.hero h1{font:700 clamp(38px,7vw,76px)/1.02 Fraunces,serif;margin:0 0 14px;letter-spacing:-.02em;max-width:900px}
+.hero p{font-size:clamp(16px,2.2vw,20px);max-width:620px;opacity:.92;margin:0 0 24px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 16px}
+section{padding:76px 0}
+.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);font-weight:700;margin:0 0 10px}
+h2{font:700 clamp(30px,4.4vw,44px)/1.1 Fraunces,serif;margin:0 0 14px;letter-spacing:-.015em}
+.lead{color:var(--mute);max-width:640px;font-size:17px;margin:0 0 36px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}@media(max-width:900px){.grid3{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card .b{padding:20px}.card h3{font:700 22px Fraunces,serif;margin:0 0 6px}.card p{margin:0 0 14px;color:var(--mute)}
+.price{display:flex;justify-content:space-between;align-items:center;border-top:1px dashed var(--line);padding-top:14px;font-size:14px;color:var(--mute)}
+.price b{color:var(--ink);font-size:17px}
+.am{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}@media(max-width:760px){.am{grid-template-columns:1fr 1fr}}
+.am div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;gap:12px;align-items:flex-start}
+.am svg{flex:none;width:26px;height:26px;color:var(--brand2)}
+.am b{display:block;font-size:15px}.am span{font-size:14px;color:var(--mute)}
+.band{background:var(--brand2);color:#eef3f1}.band h2{color:#fff}.band .eyebrow{color:var(--gold)}.band .lead{color:#c9d8d3}
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:220px 220px;gap:12px}
+.gal img{width:100%;height:100%;object-fit:cover;border-radius:14px}.gal img:first-child{grid-row:span 2}
+@media(max-width:760px){.gal{grid-template-columns:1fr 1fr;grid-template-rows:160px 160px 160px}.gal img:first-child{grid-column:span 2;grid-row:auto}}
+.two{display:grid;grid-template-columns:1fr 1.2fr;gap:34px;align-items:start}@media(max-width:900px){.two{grid-template-columns:1fr}}
+.info{display:grid;gap:14px}.info div{display:flex;gap:12px}.info svg{width:22px;height:22px;flex:none;color:var(--brand)}
+iframe{width:100%;height:360px;border:0;border-radius:18px;box-shadow:var(--shadow)}
+form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;display:grid;gap:12px;box-shadow:var(--shadow)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:560px){.row{grid-template-columns:1fr}}
+label{font-size:13px;font-weight:600;color:var(--mute);display:grid;gap:6px}
+input,select,textarea{font:inherit;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fdfcfa;color:var(--ink);width:100%}
+form .btn{justify-content:center;width:100%;padding:15px}
+.note{font-size:13px;color:var(--mute);text-align:center;margin:0}
+footer{background:#0f1115;color:#a9adb5;padding:44px 0 120px;font-size:14px}
+footer .logo{color:#fff}.cred{font-size:11px;opacity:.6;margin-top:18px;line-height:1.5}
+.fab{position:fixed;right:18px;bottom:86px;z-index:30;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.fab svg{width:30px;height:30px;color:#fff}
+.owner{position:fixed;left:0;right:0;bottom:0;z-index:40;background:#ffcf6e;color:#1a1306;padding:12px 16px;display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;font-size:14px;font-weight:600;box-shadow:0 -6px 20px rgba(0,0,0,.12)}
+.owner a{background:#1a1306;color:#fff;padding:8px 14px;border-radius:999px;text-decoration:none;white-space:nowrap}
+#missing{padding:120px 16px;text-align:center}
 </style>
 </head>
 <body>
-<div class="bar">This is a free <b>design preview</b> made by Sagar (web developer, Kathmandu) and is not the business's official website. Photos are placeholders. <a href="./">Get your own website →</a></div>
+<div class="pbar">Free <b>design preview</b> made for this business by Sagar, a web developer in Kathmandu. It is not the business's official website yet. Photos are stock placeholders. <a href="./">About this offer →</a></div>
 <div id="app"></div>
 <script>
-const K = {
- stay:{tag:"Comfortable rooms in the heart of Kathmandu",lead:"Clean, friendly and easy to reach. Book directly with us for the best rate, with no booking-site fees.",
-   s:"Rooms",items:[["Standard Room","Cosy double or twin, private bathroom, hot shower, Wi-Fi."],["Deluxe Room","More space, city view, breakfast available."],["Family Room","Room for 3-4 guests, ideal for families and groups."]],
-   x:"Why stay with us",xs:[["Direct booking","Message us on WhatsApp and get our best price."],["Local help","Airport pickup, trekking and tour arrangements."],["Great location","Walking distance to restaurants, shops and sights."]],form:"Booking enquiry",f:["Check-in date","Check-out date","Guests"]},
- health:{tag:"Caring, professional treatment close to home",lead:"Experienced doctors, modern equipment and short waiting times. Book your appointment in a minute.",
-   s:"Services",items:[["Consultation","Check-ups and expert advice for the whole family."],["Treatment","Modern procedures done with care and hygiene."],["Follow-up","Reminders and easy follow-up visits."]],
-   x:"Why patients choose us",xs:[["Experienced team","Qualified and friendly professionals."],["Clean & safe","Strict hygiene and sterilisation."],["Easy booking","Call or WhatsApp to book a time."]],form:"Book an appointment",f:["Preferred date","Preferred time","Reason for visit"]},
- beauty:{tag:"Look and feel your best",lead:"Hair, skin and beauty services by skilled stylists. Book on WhatsApp in seconds.",
-   s:"Services",items:[["Hair","Cuts, colour, treatments and styling."],["Skin","Facials, clean-ups and skin care."],["Bridal & party","Make-up and packages for special days."]],
-   x:"Why clients love us",xs:[["Skilled team","Trained, up-to-date stylists."],["Quality products","Trusted brands only."],["Easy booking","WhatsApp us and get a confirmed slot."]],form:"Book a slot",f:["Preferred date","Preferred time","Service"]},
- fitness:{tag:"Train hard. Feel great.",lead:"Classes, coaching and a friendly community. Come for a free trial session.",
-   s:"Programs",items:[["Strength","Coached strength and conditioning."],["Classes","Yoga, Zumba and group workouts."],["Personal training","One-to-one plans that fit your goals."]],
-   x:"Why join us",xs:[["Coaches","Certified, friendly trainers."],["Flexible","Morning and evening timings."],["Free trial","Try a session before you join."]],form:"Book a free trial",f:["Preferred date","Preferred time","Goal"]}
+const I = {
+ wifi:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8.8a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16.2a5 5 0 0 1 6 0"/><circle cx="12" cy="19.5" r="1"/></svg>',
+ car:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 16V11l2-5h10l2 5v5M3 16h18v3H3zM7 19v1M17 19v1"/></svg>',
+ sun:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6L19 19M5 19l1.4-1.4M17.6 6.4L19 5"/></svg>',
+ cup:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 8h13v5a6 6 0 0 1-12 0zM17 9h2a2 2 0 0 1 0 4h-2M7 3v2M11 3v2"/></svg>',
+ clock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+ map:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>',
+ phone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>',
+ shield:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>',
+ user:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>',
+ cal:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>',
+ star:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>',
+ wa:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>'
 };
-const esc = s => String(s||"").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const P = {
+ stay:{hero:["stay-2","stay-3","stay-6","stay-7"],cards:["stay-1","stay-4","stay-2"],gal:["kathmandu-0","stay-3","kathmandu-5","stay-7","kathmandu-4"]},
+ health:{hero:["health-4","health-0","health-6"],cards:["health-0","health-3","health-7"],gal:["health-4","health-1","health-2","health-6","health-5"]},
+ beauty:{hero:["beauty-2","beauty-4"],cards:["beauty-2","beauty-3","beauty-4"],gal:["beauty-4","beauty-2","beauty-3","beauty-2","beauty-4"]},
+ fitness:{hero:["fitness-0","fitness-1"],cards:["fitness-1","fitness-0","fitness-1"],gal:["fitness-0","fitness-1","fitness-0","fitness-1","fitness-0"]}
+};
+const K = {
+ stay:{label:"Hotel · Kathmandu",tag:"Your home in the heart of Kathmandu",lead:"Clean, comfortable rooms, warm Nepali hospitality, and the best rates when you book directly with us.",
+  sec:"Rooms",sech:"Rooms for every trip",secl:"From solo travellers to families, choose the room that suits you. Book directly on WhatsApp for our best price.",
+  items:[["Standard Room","Double or twin bed, private bathroom, 24-hour hot water and free Wi-Fi."],["Deluxe Room","More space, a city view and breakfast available. Ideal for couples."],["Family Room","Room for 3-4 guests, perfect for families and small groups."]],unit:"per night",
+  am:[["wifi","Free Wi-Fi","Fast internet in every room"],["car","Airport pickup","On request, with a driver waiting"],["sun","Rooftop & views","Watch the city wake up"],["cup","Breakfast","Nepali and continental"],["clock","24/7 reception","Help any time"],["map","Tours & treks","We arrange guides and trips"]],
+  form:"Check availability",f:[["Check-in","date"],["Check-out","date"],["Guests","number"],["Room","room"]],book:"Send booking request"},
+ health:{label:"Clinic · Kathmandu",tag:"Gentle, expert care for your whole family",lead:"Experienced professionals, modern equipment and short waiting times. Book your appointment in a minute.",
+  sec:"Services",sech:"How we can help",secl:"Clear advice, modern treatment and honest prices. Ask us anything on WhatsApp.",
+  items:[["Consultation & check-up","A thorough examination and clear advice for the whole family."],["Treatment","Modern procedures done with care, comfort and strict hygiene."],["Follow-up care","Easy follow-ups and reminders so you stay on track."]],unit:"from",
+  am:[["user","Experienced team","Qualified, caring professionals"],["shield","Strict hygiene","Sterilised instruments, every time"],["cal","Easy appointments","Book by phone or WhatsApp"],["clock","Short waiting","We respect your time"],["map","Easy to reach","Central location"],["star","Honest pricing","Know the cost before treatment"]],
+  form:"Book an appointment",f:[["Preferred date","date"],["Preferred time","time"],["Reason for visit","text"]],book:"Request appointment"},
+ beauty:{label:"Salon · Kathmandu",tag:"Look good. Feel even better.",lead:"Hair, skin and beauty by skilled stylists, using quality products. Book your slot on WhatsApp in seconds.",
+  sec:"Services",sech:"Our services",secl:"From everyday styling to bridal looks, here's what we do best.",
+  items:[["Hair","Cuts, colour, smoothening and treatments."],["Skin","Facials, clean-ups and glow treatments."],["Bridal & party","Make-up and packages for your big day."]],unit:"from",
+  am:[["user","Skilled stylists","Trained and up to date"],["star","Quality products","Trusted brands only"],["cal","Easy booking","WhatsApp us for a slot"],["shield","Hygienic","Clean tools for every client"],["clock","Open late","Evening slots available"],["map","Easy to find","Central location"]],
+  form:"Book a slot",f:[["Preferred date","date"],["Preferred time","time"],["Service","text"]],book:"Request slot"},
+ fitness:{label:"Gym · Kathmandu",tag:"Stronger every week",lead:"Coaching, classes and a friendly community. Come in for a free trial session.",
+  sec:"Programs",sech:"Train your way",secl:"Strength, classes or one-to-one coaching. Start with a free trial.",
+  items:[["Strength training","Coached strength and conditioning for every level."],["Group classes","Yoga, Zumba, HIIT and more."],["Personal training","One-to-one plans built around your goals."]],unit:"per month",
+  am:[["user","Certified coaches","Friendly and expert"],["clock","Early & late hours","Morning and evening slots"],["star","Modern equipment","Well maintained"],["shield","Clean & safe","Sanitised daily"],["cal","Free trial","Try before you join"],["map","Central location","Easy to reach"]],
+  form:"Book a free trial",f:[["Preferred date","date"],["Preferred time","time"],["Goal","text"]],book:"Book free trial"}
+};
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const img = (n, alt) => `<img src="img/${n}.jpg" alt="${esc(alt)}" loading="lazy">`;
 const id = new URLSearchParams(location.search).get("id");
-fetch("data.json").then(r=>r.json()).then(D=>{
- const b = D[id]; const app = document.getElementById("app");
- if(!b){ app.innerHTML='<div id="missing"><h2>Preview not found</h2><p><a href="./">See our website offer</a></p></div>'; return; }
- const k = K[b.kind] || K.stay; document.title = b.name + " | Website preview";
- const wa = b.mobile ? `https://wa.me/977${b.mobile}` : ""; const tel = b.phone ? `tel:${b.phone.replace(/\s/g,"")}` : "";
- const lat = parseFloat(b.lat), lon = parseFloat(b.lon), d = 0.004;
- const map = isFinite(lat) ? `<iframe loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=${lon-d},${lat-d},${lon+d},${lat+d}&layer=mapnik&marker=${lat},${lon}"></iframe>` : "";
+Promise.all([fetch("data.json").then(r=>r.json()), fetch("photos.json").then(r=>r.json()).catch(()=>({}))]).then(([D, PH])=>{
+ const b = D[id], app = document.getElementById("app");
+ if(!b){ app.innerHTML = '<div id="missing"><h2 class="serif">Preview not found</h2><p><a href="./">See how it works</a></p></div>'; return; }
+ const k = K[b.kind] || K.stay, p = P[b.kind] || P.stay;
+ document.title = b.name + " | Official website preview";
+ const h = [...b.name].reduce((a,c)=>a+c.charCodeAt(0),0);
+ const hero = p.hero[h % p.hero.length];
+ const wa = b.mobile ? `https://wa.me/977${b.mobile}` : "";
+ const tel = b.phone ? `tel:${b.phone.replace(/[^\d+]/g,"")}` : "";
+ const lat = parseFloat(b.lat), lon = parseFloat(b.lon), d = 0.004, has = isFinite(lat) && isFinite(lon);
+ const gmap = has ? `https://www.google.com/maps/search/?api=1&query=${lat},${lon}` : "";
+ const credits = Object.values(PH).flat().filter(x=>x.file).map(x=>`${esc(x.credit)} (<a href="${esc(x.page)}">source</a>)`).join(" · ");
  app.innerHTML = `
- <div class="wrap">
-  <nav><div class="brand">${esc(b.name)}</div><div><a href="#s">${k.s}</a><a href="#find">Find us</a><a href="#book">Book</a></div></nav>
-  <div class="hero"><h1>${esc(b.name)}</h1><p>${k.tag}. ${k.lead}</p>
-   <div class="cta">${wa?`<a class="btn wa" href="${wa}">WhatsApp us</a>`:""}${tel?`<a class="btn call" href="${tel}">Call ${esc(b.phone)}</a>`:""}<a class="btn mail" href="#book">${k.form}</a></div></div>
-  <section id="s"><h2>${k.s}</h2><div class="grid">${k.items.map(i=>`<div class="card"><div class="ph">your photo here</div><h3>${i[0]}</h3><p>${i[1]}</p></div>`).join("")}</div></section>
-  <section><h2>${k.x}</h2><div class="grid">${k.xs.map(i=>`<div class="card"><h3>${i[0]}</h3><p>${i[1]}</p></div>`).join("")}</div></section>
-  <section id="find" class="two"><div><h2>Find us</h2><p style="font-family:system-ui">${esc(b.address)}</p>${tel?`<p style="font-family:system-ui">Phone: <a href="${tel}">${esc(b.phone)}</a></p>`:""}</div><div>${map}</div></section>
-  <section id="book"><h2>${k.form}</h2>
-   <form onsubmit="event.preventDefault();alert('In the live website this sends the request straight to your WhatsApp / email.');">
-    <input placeholder="Your name" required><input placeholder="Phone or email" required>${k.f.map(f=>`<input placeholder="${f}">`).join("")}<textarea rows="3" placeholder="Message"></textarea><button>Send request</button></form></section>
-  <footer>© ${new Date().getFullYear()} ${esc(b.name)} · Design preview by Sagar</footer>
- </div>${wa?`<a class="float" href="${wa}">WhatsApp</a>`:""}`;
+ <header><div class="nav"><div class="logo">${esc(b.name)}<small>${k.label}</small></div>
+  <nav class="links"><a href="#s">${k.sec}</a><a href="#why">Why us</a><a href="#find">Location</a><a href="#book">${k.form}</a></nav>
+  ${wa?`<a class="btn b-wa" href="${wa}">${I.wa.replace('<svg','<svg width="18" height="18"')} WhatsApp</a>`:(tel?`<a class="btn b-dark" href="${tel}">Call us</a>`:"")}</div></header>
+ <div class="hero">${img(hero, b.name)}<div class="in">
+  <div class="chip">${I.map.replace('<svg','<svg width="16" height="16"')} ${esc(b.address)}</div>
+  <h1>${esc(b.name)}</h1><p>${k.tag}. ${k.lead}</p>
+  <div class="cta">${wa?`<a class="btn b-wa" href="${wa}">${I.wa.replace('<svg','<svg width="18" height="18"')} Book on WhatsApp</a>`:""}${tel?`<a class="btn b-light" href="${tel}">Call ${esc(b.phone)}</a>`:""}<a class="btn b-ghost" href="#book">${k.form}</a></div></div></div>
+ <section id="s"><div class="wrap"><p class="eyebrow">${k.sec}</p><h2>${k.sech}</h2><p class="lead">${k.secl}</p>
+  <div class="grid3">${k.items.map((it,i)=>`<div class="card">${img(p.cards[i%p.cards.length], it[0])}<div class="b"><h3>${it[0]}</h3><p>${it[1]}</p>
+   <div class="price"><span>${k.unit}</span><b>Rs ____</b></div></div></div>`).join("")}</div></div></section>
+ <section id="why" class="band"><div class="wrap"><p class="eyebrow">Why ${esc(b.name)}</p><h2>Everything you need, nothing you don't</h2><p class="lead">Simple, friendly and reliable. Here's what you can expect.</p>
+  <div class="am">${k.am.map(a=>`<div>${I[a[0]]}<p style="margin:0"><b style="color:var(--ink)">${a[1]}</b><span>${a[2]}</span></p></div>`).join("")}</div></div></section>
+ <section><div class="wrap"><p class="eyebrow">Gallery</p><h2>Take a look around</h2><p class="lead">Your real photos go here. Guests trust what they can see.</p>
+  <div class="gal">${p.gal.map(n=>img(n,"Gallery photo")).join("")}</div></div></section>
+ <section id="find"><div class="wrap two"><div><p class="eyebrow">Location</p><h2>Easy to find</h2>
+  <div class="info"><div>${I.map}<span>${esc(b.address)}${gmap?`<br><a href="${gmap}" target="_blank" rel="noopener">Get directions on Google Maps →</a>`:""}</span></div>
+  ${b.phone?`<div>${I.phone}<span><a href="${tel}">${esc(b.phone)}</a></span></div>`:""}
+  ${b.email?`<div>${I.cal}<span>${esc(b.email)}</span></div>`:""}
+  <div>${I.clock}<span>Open daily. Contact us any time.</span></div></div></div>
+  <div>${has?`<iframe loading="lazy" title="Map" src="https://www.openstreetmap.org/export/embed.html?bbox=${lon-d},${lat-d},${lon+d},${lat+d}&layer=mapnik&marker=${lat},${lon}"></iframe>`:""}</div></div></section>
+ <section id="book" style="padding-top:20px"><div class="wrap two"><div><p class="eyebrow">${k.form}</p><h2>Book directly, get the best price</h2>
+  <p class="lead">Send your request and we'll confirm quickly on WhatsApp or by phone. No middleman, no booking fees.</p></div>
+  <form id="f"><div class="row"><label>Your name<input name="name" required></label><label>Phone / WhatsApp<input name="phone" required></label></div>
+   <div class="row">${k.f.map(([l,t])=> t==="room" ? `<label>${l}<select name="${l}">${k.items.map(x=>`<option>${x[0]}</option>`).join("")}</select></label>` : `<label>${l}<input name="${l}" type="${t}"></label>`).join("")}</div>
+   <label>Message<textarea name="msg" rows="3" placeholder="Anything we should know?"></textarea></label>
+   <button class="btn b-wa" type="submit">${I.wa.replace('<svg','<svg width="18" height="18"')} ${k.book}</button>
+   <p class="note">Opens WhatsApp with your request ready to send.</p></form></div></section>
+ <footer><div class="wrap"><div class="logo">${esc(b.name)}</div><p>${esc(b.address)}${b.phone?" · "+esc(b.phone):""}</p>
+  <p>© ${new Date().getFullYear()} ${esc(b.name)}. Website preview by Sagar, Kathmandu.</p><div class="cred">Placeholder photos from Wikimedia Commons: ${credits}</div></div></footer>
+ ${wa?`<a class="fab" href="${wa}" aria-label="WhatsApp">${I.wa}</a>`:""}
+ <div class="owner">Owner of ${esc(b.name)}? This site can go live today. You pay nothing until you're happy with it. <a href="./?from=${encodeURIComponent(id)}">Make it mine →</a></div>`;
+ document.getElementById("f").addEventListener("submit", e=>{
+  e.preventDefault(); const fd = new FormData(e.target);
+  const lines = [`Hello ${b.name}, I'd like to ${k.form.toLowerCase()}.`]; for (const [kk,v] of fd) if (v) lines.push(`${kk}: ${v}`);
+  const text = encodeURIComponent(lines.join("\n"));
+  if (wa) window.open(`${wa}?text=${text}`, "_blank"); else if (b.email) location.href = `mailto:${b.email}?subject=${encodeURIComponent(k.form)}&body=${text}`; else alert("Please call us to book.");
+ });
 });
 </script>
 </body>

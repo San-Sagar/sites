@@ -539,36 +539,6 @@
   "lat": "27.7157247",
   "lon": "85.3077194"
  },
- "marshyangdi-hotel": {
-  "name": "Marshyangdi Hotel",
-  "kind": "stay",
-  "phone": "9851057618",
-  "mobile": "9851057618",
-  "email": "",
-  "address": "Chaksibari Marg, Thamel",
-  "lat": "27.7170604",
-  "lon": "85.3101629"
- },
- "ganesh-himal-hotel": {
-  "name": "Ganesh Himal Hotel",
-  "kind": "stay",
-  "phone": "9851058569",
-  "mobile": "9851058569",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.7098396",
-  "lon": "85.3065477"
- },
- "lalit-bhojanalaya": {
-  "name": "Lalit Bhojanalaya",
-  "kind": "stay",
-  "phone": "9849132272",
-  "mobile": "9849132272",
-  "email": "",
-  "address": "patan Dhokaa",
-  "lat": "27.678669",
-  "lon": "85.3211318"
- },
  "namaste-dental-health-care-center": {
   "name": "Namaste Dental Health Care Center",
   "kind": "health",
@@ -619,16 +589,6 @@
   "lat": "27.720872",
   "lon": "85.3142955"
  },
- "has-chicken-farm": {
-  "name": "Has chicken farm",
-  "kind": "health",
-  "phone": "9849123555",
-  "mobile": "9849123555",
-  "email": "",
-  "address": "Sunakothi village",
-  "lat": "27.6208186",
-  "lon": "85.3220212"
- },
  "tamu-s-paradise": {
   "name": "Tamu's Paradise",
   "kind": "stay",
@@ -638,16 +598,6 @@
   "address": "Shiva Sankar Galli",
   "lat": "27.7235207",
   "lon": "85.3088407"
- },
- "has-chicken-farm-2": {
-  "name": "HAS chicken farm",
-  "kind": "health",
-  "phone": "+9779849123555",
-  "mobile": "9849123555",
-  "email": "",
-  "address": "Thecho Chapagaun Road",
-  "lat": "27.6160322",
-  "lon": "85.3210576"
  },
  "hotel-kamal": {
   "name": "Hotel Kamal",
@@ -678,26 +628,6 @@
   "address": "Natole to Patan Dhoka",
   "lat": "27.6759772",
   "lon": "85.3187814"
- },
- "sk-khaja-ghar": {
-  "name": "SK Khaja Ghar",
-  "kind": "stay",
-  "phone": "9849008945",
-  "mobile": "9849008945",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.7245068",
-  "lon": "85.3016471"
- },
- "crush-candy-hotel": {
-  "name": "Crush Candy Hotel",
-  "kind": "stay",
-  "phone": "9804005094",
-  "mobile": "9804005094",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.7087082",
-  "lon": "85.330985"
  },
  "fresh-look-saloon-and-beauty-home": {
   "name": "Fresh Look Saloon and Beauty Home",
@@ -749,26 +679,6 @@
   "lat": "27.6746986",
   "lon": "85.3648338"
  },
- "hotel-prince-plaza-pvt-ltd": {
-  "name": "Hotel Prince Plaza Pvt. Ltd.",
-  "kind": "stay",
-  "phone": "9851075345",
-  "mobile": "9851075345",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.7113943",
-  "lon": "85.3337523"
- },
- "mirage-lords-inn": {
-  "name": "Mirage Lords Inn",
-  "kind": "stay",
-  "phone": "9801098869",
-  "mobile": "9801098869",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.7038113",
-  "lon": "85.3416614"
- },
  "chillout-holiday-home": {
   "name": "Chillout Holiday Home",
   "kind": "stay",
@@ -778,16 +688,6 @@
   "address": "Kathmandu Valley, Nepal",
   "lat": "27.7109305",
   "lon": "85.3121826"
- },
- "black-mountain": {
-  "name": "Black Mountain",
-  "kind": "stay",
-  "phone": "9851032613",
-  "mobile": "9851032613",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.7023945",
-  "lon": "85.3507577"
  },
  "fuzion-unisex-salon": {
   "name": "Fuzion unisex salon",
@@ -869,16 +769,6 @@
   "lat": "27.6019954",
   "lon": "85.3230234"
  },
- "sunil-khaja-ghar": {
-  "name": "Sunil Khaja Ghar",
-  "kind": "stay",
-  "phone": "9818414387",
-  "mobile": "9818414387",
-  "email": "",
-  "address": "Nepaltar Marg, Kathmandu",
-  "lat": "27.7412264",
-  "lon": "85.3024343"
- },
  "sukalpa-spa-and-therapy": {
   "name": "Sukalpa Spa and Therapy",
   "kind": "beauty",
@@ -908,16 +798,6 @@
   "address": "Kathmandu Valley, Nepal",
   "lat": "27.6933594",
   "lon": "85.3143783"
- },
- "blue-ocean-spa-steam": {
-  "name": "Blue Ocean Spa & Steam",
-  "kind": "beauty",
-  "phone": "9818447816",
-  "mobile": "9818447816",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.6828939",
-  "lon": "85.3140038"
  },
  "sami-beauty-parlour-and-cosmetic-center": {
   "name": "Sami Beauty Parlour And Cosmetic Center",
@@ -958,16 +838,6 @@
   "address": "Kathmandu Valley, Nepal",
   "lat": "27.6749208",
   "lon": "85.3624816"
- },
- "sambanda-guest-house-and-special-sekuwaa": {
-  "name": "Sambanda Guest House And Special Sekuwaa House",
-  "kind": "stay",
-  "phone": "9803789311",
-  "mobile": "9803789311",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.6754928",
-  "lon": "85.3525703"
  },
  "nagarik-samudayik-eye-center": {
   "name": "Nagarik Samudayik Eye Center",
@@ -1149,16 +1019,6 @@
   "lat": "27.6764666",
   "lon": "85.3464491"
  },
- "dipika-guest-house-and-restaurant": {
-  "name": "Dipika Guest House and Restaurant",
-  "kind": "stay",
-  "phone": "9862176801,9813665435",
-  "mobile": "9862176801",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.6757413",
-  "lon": "85.3453975"
- },
  "cosmic-beauty-palour-and-traning-center": {
   "name": "Cosmic Beauty Palour and Traning Center",
   "kind": "beauty",
@@ -1219,16 +1079,6 @@
   "lat": "27.6738598",
   "lon": "85.3430425"
  },
- "beni-bhojanalaya-and-guest-house": {
-  "name": "Beni Bhojanalaya and Guest House",
-  "kind": "stay",
-  "phone": "9808301566",
-  "mobile": "9808301566",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.6737301",
-  "lon": "85.3429011"
- },
  "subash-thaqur": {
   "name": "Subash Thaqur",
   "kind": "beauty",
@@ -1248,16 +1098,6 @@
   "address": "Kathmandu Valley, Nepal",
   "lat": "27.6730861",
   "lon": "85.3596793"
- },
- "sandhar-guest-house-and-rooftop-khaja-an": {
-  "name": "Sandhar Guest House and Rooftop Khaja and Khana ghar",
-  "kind": "stay",
-  "phone": "9866426010",
-  "mobile": "9866426010",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.6782305",
-  "lon": "85.3491143"
  },
  "sanju-beauty-palour": {
   "name": "Sanju Beauty Palour",
@@ -1459,16 +1299,6 @@
   "lat": "27.6690966",
   "lon": "85.3496988"
  },
- "sadhana-beauty-parlour-and-fancy-store": {
-  "name": "Sadhana Beauty Parlour And Fancy Store",
-  "kind": "beauty",
-  "phone": "9844234783",
-  "mobile": "9844234783",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.6711712",
-  "lon": "85.3520484"
- },
  "universal-physical-fitness": {
   "name": "Universal Physical Fitness",
   "kind": "fitness",
@@ -1518,16 +1348,6 @@
   "address": "Kathmandu Valley, Nepal",
   "lat": "27.6741412",
   "lon": "85.3517071"
- },
- "jadibuti-chasma-pasal": {
-  "name": "Jadibuti Chasma Pasal",
-  "kind": "health",
-  "phone": "9823429000",
-  "mobile": "9823429000",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.6746181",
-  "lon": "85.3518456"
  },
  "shivam-supercut": {
   "name": "Shivam Supercut",
@@ -1598,36 +1418,6 @@
   "address": "Kathmandu Valley, Nepal",
   "lat": "27.6736446",
   "lon": "85.3514486"
- },
- "monsoon-opticals-and-chasma-pasal": {
-  "name": "Monsoon Opticals And Chasma Pasal",
-  "kind": "health",
-  "phone": "9841705343",
-  "mobile": "9841705343",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.6710171",
-  "lon": "85.3540136"
- },
- "micro-vision-chasma-pasal": {
-  "name": "Micro Vision Chasma Pasal",
-  "kind": "health",
-  "phone": "9851114637,9849194637",
-  "mobile": "9851114637",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.6711559",
-  "lon": "85.3539145"
- },
- "netra-jyotis-chasma-pasal": {
-  "name": "Netra Jyotis Chasma Pasal",
-  "kind": "health",
-  "phone": "9843548192,9841867594",
-  "mobile": "9843548192",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.671262",
-  "lon": "85.353852"
  },
  "asia-optics": {
   "name": "Asia Optics",
@@ -1869,16 +1659,6 @@
   "lat": "27.7465486",
   "lon": "85.3224844"
  },
- "sapana-tirtha-chasma-pasal": {
-  "name": "Sapana Tirtha Chasma Pasal",
-  "kind": "health",
-  "phone": "9841661120",
-  "mobile": "9841661120",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.7651717",
-  "lon": "85.3303708"
- },
  "kunwar-veterinary-pharma": {
   "name": "Kunwar Veterinary Pharma",
   "kind": "health",
@@ -2049,16 +1829,6 @@
   "lat": "27.7423725",
   "lon": "85.3292025"
  },
- "baglung-panchkot-guest-house-and-restaur": {
-  "name": "Baglung Panchkot Guest House And Restaurant",
-  "kind": "stay",
-  "phone": "9862225443",
-  "mobile": "9862225443",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.7354931",
-  "lon": "85.3124025"
- },
  "sarmika-beauty-parlour-and-cosmetic": {
   "name": "sarmika Beauty parlour and cosmetic",
   "kind": "beauty",
@@ -2158,16 +1928,6 @@
   "address": "Kathmandu Valley, Nepal",
   "lat": "27.7373765",
   "lon": "85.3167854"
- },
- "rara-guest-house-and-restaurant": {
-  "name": "Rara Guest House and Restaurant",
-  "kind": "stay",
-  "phone": "+977 9749873547, +977-9818858337",
-  "mobile": "9749873547",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.7527961",
-  "lon": "85.327071"
  },
  "mediscope-clinic-and-pharmacy": {
   "name": "Mediscope Clinic and Pharmacy",
@@ -2839,16 +2599,6 @@
   "lat": "27.6815622",
   "lon": "85.3406015"
  },
- "adriz-boys-home": {
-  "name": "Adriz Boys Home",
-  "kind": "stay",
-  "phone": "9823065800,9840943905",
-  "mobile": "9823065800",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.6816664",
-  "lon": "85.3418485"
- },
  "rose-beauty-parlour": {
   "name": "Rose Beauty Parlour",
   "kind": "beauty",
@@ -3199,16 +2949,6 @@
   "lat": "27.6806187",
   "lon": "85.3475539"
  },
- "hotel-b-and-d-fastfood-cafe": {
-  "name": "Hotel B And D Fastfood Cafe",
-  "kind": "stay",
-  "phone": "9863276034,9861158725",
-  "mobile": "9863276034",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.6805493",
-  "lon": "85.3479864"
- },
  "koteshwor-youth-hostel": {
   "name": "Koteshwor Youth Hostel",
   "kind": "stay",
@@ -3228,26 +2968,6 @@
   "address": "Sangha",
   "lat": "27.6404347",
   "lon": "85.4782824"
- },
- "mata-manakamana-bakery-and-dairy-pasal": {
-  "name": "Mata Manakamana Bakery And Dairy Pasal",
-  "kind": "stay",
-  "phone": "9841102814",
-  "mobile": "9841102814",
-  "email": "",
-  "address": "Sagha",
-  "lat": "27.6418077",
-  "lon": "85.4772776"
- },
- "ronisha-store": {
-  "name": "Ronisha Store",
-  "kind": "stay",
-  "phone": "9860146141",
-  "mobile": "9860146141",
-  "email": "",
-  "address": "Sagha",
-  "lat": "27.6417974",
-  "lon": "85.4772743"
  },
  "easy-homes": {
   "name": "Easy Homes",
@@ -3309,16 +3029,6 @@
   "lat": "27.7300505",
   "lon": "85.2873631"
  },
- "manju-baha-hotel-school": {
-  "name": "Manju Baha Hotel School",
-  "kind": "stay",
-  "phone": "+9779767234014",
-  "mobile": "9767234014",
-  "email": "",
-  "address": "Thalachhen",
-  "lat": "27.6748394",
-  "lon": "85.4337653"
- },
  "temba-s-homestay": {
   "name": "Temba's Homestay",
   "kind": "stay",
@@ -3368,16 +3078,6 @@
   "address": "Kathmandu Valley, Nepal",
   "lat": "27.7252621",
   "lon": "85.2784475"
- },
- "the-fern-residency-platinum": {
-  "name": "The Fern Residency Platinum",
-  "kind": "stay",
-  "phone": "9851097039",
-  "mobile": "9851097039",
-  "email": "",
-  "address": "Kathmandu Valley, Nepal",
-  "lat": "27.6984241",
-  "lon": "85.2914754"
  },
  "kathmandu-airport-view-hotel-lodge": {
   "name": "Kathmandu Airport View Hotel & Lodge",

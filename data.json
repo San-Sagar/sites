@@ -3088,5 +3088,205 @@
   "address": "Kathmandu Valley, Nepal",
   "lat": "27.7010324",
   "lon": "85.3657434"
+ },
+ "cafe-hessed": {
+  "name": "Cafe Hessed",
+  "kind": "food",
+  "phone": "+977-1-5530993",
+  "mobile": "",
+  "email": "hessedcafe@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.6759765",
+  "lon": "85.3143833"
+ },
+ "le-trio": {
+  "name": "Le Trio",
+  "kind": "food",
+  "phone": "+977 1 5521674",
+  "mobile": "",
+  "email": "letriorestaurant@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.677155",
+  "lon": "85.313754"
+ },
+ "french-bakery": {
+  "name": "French Bakery",
+  "kind": "food",
+  "phone": "4251998",
+  "mobile": "",
+  "email": "frenchbakeryktm@hotmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7127874",
+  "lon": "85.3086857"
+ },
+ "friends": {
+  "name": "Friends",
+  "kind": "food",
+  "phone": "01-4700063",
+  "mobile": "",
+  "email": "friendskathmandu@gmail.com",
+  "address": "Mandala Street",
+  "lat": "27.7152992",
+  "lon": "85.3108179"
+ },
+ "chicken-station-kumaripati": {
+  "name": "Chicken Station Kumaripati",
+  "kind": "food",
+  "phone": "9808461354",
+  "mobile": "9808461354",
+  "email": "chickenstation521@gmail.com",
+  "address": "kumaripati",
+  "lat": "27.671335",
+  "lon": "85.3192009"
+ },
+ "laughing-bird-cafe-and-restaurant": {
+  "name": "Laughing Bird Cafe and Restaurant",
+  "kind": "food",
+  "phone": "+977 980 1070176",
+  "mobile": "9801070176",
+  "email": "laughingbirdcafe@gmail.com",
+  "address": "J.P. Road",
+  "lat": "27.7116076",
+  "lon": "85.3091544"
+ },
+ "tibetan-and-nepali-kitchen": {
+  "name": "Tibetan and Nepali Kitchen",
+  "kind": "food",
+  "phone": "977-014701303",
+  "mobile": "",
+  "email": "migyurlama29@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7147876",
+  "lon": "85.3102093"
+ },
+ "om-shree-food-center": {
+  "name": "Om Shree Food Center",
+  "kind": "food",
+  "phone": "+977 984 3741051",
+  "mobile": "9843741051",
+  "email": "sunilshrestha001122@gmail.com",
+  "address": "Dabali Marga",
+  "lat": "27.7149382",
+  "lon": "85.3122887"
+ },
+ "pd-coffee-lab": {
+  "name": "PD Coffee Lab",
+  "kind": "food",
+  "phone": "+977 984-4592016",
+  "mobile": "9844592016",
+  "email": "pdcoffeelab@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.6860176",
+  "lon": "85.3156255"
+ },
+ "lunchway": {
+  "name": "Lunchway",
+  "kind": "food",
+  "phone": "+977 9749499887",
+  "mobile": "9749499887",
+  "email": "lunchwaynepal@gmail.com",
+  "address": "Swayambhu Marg, Kathmandu",
+  "lat": "27.7139221",
+  "lon": "85.3032182"
+ },
+ "chiva-cafe": {
+  "name": "Chiva Cafe",
+  "kind": "food",
+  "phone": "9860756619",
+  "mobile": "9860756619",
+  "email": "cafechiva26@gmail.com",
+  "address": "kwachhen, Bhaktapur",
+  "lat": "27.6715321",
+  "lon": "85.4295306"
+ },
+ "cake-gallery-bakery-and-coffee-bar": {
+  "name": "Cake Gallery Bakery And Coffee Bar",
+  "kind": "food",
+  "phone": "9843444644",
+  "mobile": "9843444644",
+  "email": "d.prabhanda123@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.6794101",
+  "lon": "85.3470711"
+ },
+ "dhana-jyasa": {
+  "name": "Dhana Jyasa",
+  "kind": "retail",
+  "phone": "+977014226496",
+  "mobile": "",
+  "email": "dhanajyasa@gmail.com",
+  "address": "Baghbazaar Road",
+  "lat": "27.7057195",
+  "lon": "85.3192026"
+ },
+ "harati-curio-and-jewellery-shop": {
+  "name": "Harati Curio And Jewellery Shop",
+  "kind": "retail",
+  "phone": "",
+  "mobile": "",
+  "email": "sitaramrijal8@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7129204",
+  "lon": "85.3121144"
+ },
+ "caravanbone-craft": {
+  "name": "Caravanbone Craft",
+  "kind": "retail",
+  "phone": "",
+  "mobile": "",
+  "email": "caravanbone@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7109622",
+  "lon": "85.3110937"
+ },
+ "uni-clo-art-and-craft-store": {
+  "name": "Uni Clo Art And Craft Store",
+  "kind": "retail",
+  "phone": "",
+  "mobile": "",
+  "email": "uniclocraftstore@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7153844",
+  "lon": "85.3118585"
+ },
+ "nepal-handloom-pashmina-traders": {
+  "name": "Nepal Handloom Pashmina Traders",
+  "kind": "retail",
+  "phone": "",
+  "mobile": "",
+  "email": "handloompashmina22@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7141119",
+  "lon": "85.311209"
+ },
+ "ganesh-pashmina-shop": {
+  "name": "Ganesh Pashmina Shop",
+  "kind": "retail",
+  "phone": "984160090",
+  "mobile": "",
+  "email": "pashminaganesh@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7144475",
+  "lon": "85.3113621"
+ },
+ "tibet-wears": {
+  "name": "Tibet Wears",
+  "kind": "retail",
+  "phone": "",
+  "mobile": "",
+  "email": "tibetwears@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7147519",
+  "lon": "85.3108083"
+ },
+ "shree-swastik-handicraft": {
+  "name": "Shree Swastik Handicraft",
+  "kind": "retail",
+  "phone": "4424248",
+  "mobile": "",
+  "email": "swastik.handicraft22@gmail.com",
+  "address": "Kathmandu Valley, Nepal",
+  "lat": "27.7143876",
+  "lon": "85.3119577"
  }
 }

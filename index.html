@@ -4,74 +4,176 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Websites for Nepali Businesses | Sagar, Kathmandu</title>
-<meta name="description" content="Mobile-friendly websites for hotels, guesthouses, clinics, salons and gyms in Nepal. Live in 48 hours. Rs 9,999 launch price.">
+<meta name="description" content="Professional, mobile-friendly websites for hotels, clinics, salons and gyms in Nepal. Live in 48 hours. You pay nothing until you're happy with it.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#1b1f24;--mute:#5b6470;--bg:#faf8f4;--card:#fff;--line:#e7e2d8;--accent:#b4472b;--accent2:#1f5f5b}
-@media (prefers-color-scheme:dark){:root{--ink:#eee;--mute:#aab;--bg:#15181b;--card:#1e2226;--line:#2f353b}}
-*{box-sizing:border-box}body{margin:0;font:17px/1.6 system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--bg)}
-.wrap{max-width:960px;margin:0 auto;padding:0 16px}
-h1{font:700 clamp(32px,5.5vw,52px)/1.08 Georgia,serif;margin:56px 0 14px}
-.lead{font-size:20px;color:var(--mute);max-width:680px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin:22px 0}
-.price{font:700 40px Georgia,serif}.price s{font-size:22px;color:var(--mute);margin-right:8px}
-ul{padding-left:20px}li{margin:6px 0}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}@media(max-width:760px){.grid{grid-template-columns:1fr}}
-.btn{display:inline-block;background:var(--accent);color:#fff;padding:14px 22px;border-radius:10px;font-weight:700;text-decoration:none}
-.fine{color:var(--mute);font-size:15px}
-footer{margin:50px 0;color:var(--mute);font-size:14px}
+:root{--ink:#16181d;--mute:#5d6470;--bg:#fbf9f5;--card:#fff;--line:#ece6db;--brand:#9c3d22;--brand2:#14473f;--gold:#c99a3b;--ok:#157a4a;--shadow:0 10px 30px rgba(20,20,30,.08)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#eceae5;--mute:#a7adb6;--bg:#121417;--card:#1b1e22;--line:#2b3036;--shadow:none}}
+:root[data-theme="dark"]{--ink:#eceae5;--mute:#a7adb6;--bg:#121417;--card:#1b1e22;--line:#2b3036;--shadow:none}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.65 Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font:700 20px Fraunces,serif}.logo span{color:var(--brand)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;padding:14px 22px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;font-size:16px}
+.b1{background:var(--brand);color:#fff}.b2{background:transparent;color:var(--ink);border:1px solid var(--line)}.bw{background:#25d366;color:#06351a}
+.hero{padding:56px 0 30px}
+.badge{display:inline-block;background:#e7f4ec;color:var(--ok);font-weight:700;font-size:13px;padding:6px 12px;border-radius:999px;margin-bottom:18px}
+h1{font:700 clamp(36px,6vw,64px)/1.04 Fraunces,serif;letter-spacing:-.02em;margin:0 0 18px;max-width:880px}
+.lead{font-size:clamp(17px,2vw,21px);color:var(--mute);max-width:700px;margin:0 0 26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+section{padding:60px 0}
+h2{font:700 clamp(28px,4vw,40px)/1.12 Fraunces,serif;margin:0 0 12px;letter-spacing:-.015em}
+.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--brand);font-weight:700;margin:0 0 8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--shadow)}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}@media(max-width:860px){.g3{grid-template-columns:1fr}}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:22px}@media(max-width:860px){.g2{grid-template-columns:1fr}}
+.step b{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--brand2);color:#fff;font-weight:700;margin-bottom:12px}
+.step h3{margin:0 0 6px;font-size:19px}.step p{margin:0;color:var(--mute)}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}@media(max-width:860px){.shots{grid-template-columns:1fr}}
+.shot{display:block;border-radius:16px;overflow:hidden;border:1px solid var(--line);text-decoration:none;color:var(--ink);background:var(--card);box-shadow:var(--shadow)}
+.shot img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}.shot div{padding:14px 16px;font-weight:600}.shot small{display:block;color:var(--mute);font-weight:500}
+.price{font:700 54px Fraunces,serif;line-height:1}.price small{font:500 16px Inter;color:var(--mute)}
+ul.ck{list-style:none;padding:0;margin:16px 0}ul.ck li{padding-left:28px;position:relative;margin:9px 0}
+ul.ck li::before{content:"";position:absolute;left:0;top:7px;width:16px;height:16px;border-radius:50%;background:var(--ok);-webkit-mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>') center/14px no-repeat,linear-gradient(#000,#000);-webkit-mask-composite:source-in}
+.guar{border:2px solid var(--ok);background:color-mix(in srgb,var(--ok) 7%,var(--card))}
+.calc label{display:grid;gap:6px;font-size:14px;font-weight:600;color:var(--mute)}
+.calc input{font:inherit;font-size:18px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+.calc .fields{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}@media(max-width:560px){.calc .fields{grid-template-columns:1fr}}
+.out{display:grid;gap:12px;margin-top:6px}
+.out div{display:flex;justify-content:space-between;gap:12px;padding:14px 16px;border-radius:12px;background:var(--bg);border:1px solid var(--line)}
+.out .big{background:var(--brand2);color:#fff;border:0}.out .big b{font-size:24px}
+.fine{font-size:13px;color:var(--mute)}
+details{border-bottom:1px solid var(--line);padding:16px 0}summary{cursor:pointer;font-weight:700;font-size:18px}details p{color:var(--mute);margin:10px 0 0}
+footer{padding:40px 0 60px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+.hi{background:#fff3d6;color:#4a3300;border-radius:14px;padding:14px 18px;margin:0 0 24px;display:none;font-weight:600}
 </style>
 </head>
 <body>
 <div class="wrap">
-<h1>A website that brings you customers, live in 48 hours.</h1>
-<p class="lead">For hotels, guesthouses, clinics, dental clinics, salons and gyms in Nepal. Your guests and patients search on their phones. Make sure they find <b>you</b>, not a booking site that takes commission.</p>
+<nav><div class="logo">Sagar<span>.</span> Web</div><a class="btn b2" href="#start" style="padding:10px 16px;font-size:15px">Get started</a></nav>
+<div class="hi" id="hi"></div>
+<section class="hero">
+<div class="badge">✓ Pay nothing until your website is live and you're happy</div>
+<h1>Get more bookings with a website built for your business, live in 48 hours.</h1>
+<p class="lead">For hotels, guesthouses, clinics, salons and gyms in Nepal. A professional, mobile-friendly website with WhatsApp booking, so guests and customers find you, not a booking site that takes commission.</p>
+<div class="cta"><a class="btn b1" href="#start">Make my website →</a><a class="btn b2" href="#calc">How much am I losing?</a></div>
+</section>
 
-<div class="card grid">
-<div>
-<h2 style="margin-top:0">What you get</h2>
-<ul>
-<li>A professional, <b>mobile-friendly</b> website with your photos, rooms or services, and prices</li>
-<li><b>WhatsApp</b> and call buttons, so customers contact you in one tap</li>
-<li>A booking or appointment request form that comes straight to you</li>
-<li>A Google Maps / OpenStreetMap location and directions</li>
-<li>Secure <b>https</b> (no "Not secure" warning)</li>
-<li>Help registering your domain: <b>.com.np is free</b> for Nepal-registered businesses, or a .com for about Rs 1,500 a year</li>
-<li>Free hosting, and one round of changes after launch</li>
-</ul>
+<section style="padding-top:10px">
+<p class="eyebrow">Real previews, already made</p>
+<h2>See what your website will look like</h2>
+<p class="lead">I've already made free previews for Kathmandu businesses. If you received an email from me, your own preview is ready.</p>
+<div class="shots">
+<a class="shot" href="preview.html?id=bodhi-inn"><img src="img/stay-2.jpg" alt="Hotel website preview"><div>Hotel website<small>Rooms, WhatsApp booking, map</small></div></a>
+<a class="shot" href="preview.html?id=family-dental-wellbeing"><img src="img/health-4.jpg" alt="Clinic website preview"><div>Clinic website<small>Services, appointment requests</small></div></a>
+<a class="shot" href="preview.html?id=mystic-vibes-fitness-studio"><img src="img/fitness-1.jpg" alt="Gym website preview"><div>Gym / studio website<small>Programs, free-trial booking</small></div></a>
 </div>
-<div>
-<h2 style="margin-top:0">Price</h2>
-<div class="price">Rs 9,999</div>
-<p>Launch price, one-time payment.</p>
-<ul>
-<li>50% advance via <b>eSewa: 9761618199</b></li>
-<li>50% only when you're happy with it</li>
-<li>Optional care plan: Rs 500/month for updates, new photos and price changes</li>
-</ul>
-<a class="btn" href="mailto:gautamsagar2040@gmail.com?subject=Website%20for%20my%20business">Email me to start</a>
-<p class="fine">Or reply to the email you received. Your free preview is already made.</p>
-</div>
-</div>
+</section>
 
+<section id="calc">
+<div class="g2">
+<div><p class="eyebrow">For hotels & guesthouses</p><h2>How much do booking sites take from you?</h2>
+<p class="lead" style="font-size:17px">Booking.com and Agoda typically charge around <b>15% commission</b> (often 10–25%) on every booking. Enter your numbers to see what that costs you each month, and what a direct-booking website could save.</p>
+<p class="fine">Commission range: SiteMinder and Guesty 2026 hotel commission guides. Your own contract rate may differ, so change it in the calculator.</p></div>
+<div class="card calc">
+<div class="fields">
+<label>Rooms<input id="rooms" type="number" value="12" min="1"></label>
+<label>Average room rate (Rs/night)<input id="rate" type="number" value="3500" min="0"></label>
+<label>Occupancy %<input id="occ" type="number" value="55" min="0" max="100"></label>
+<label>% booked via booking sites<input id="ota" type="number" value="60" min="0" max="100"></label>
+<label>Commission %<input id="com" type="number" value="15" min="0" max="40"></label>
+<label>% you could move to direct<input id="shift" type="number" value="20" min="0" max="100"></label>
+</div>
+<div class="out">
+<div><span>Commission you pay per month</span><b id="o1">–</b></div>
+<div><span>Per year</span><b id="o2">–</b></div>
+<div class="big"><span>Saved per year with direct bookings</span><b id="o3">–</b></div>
+<div><span>Website pays for itself in</span><b id="o4">–</b></div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="g2">
 <div class="card">
-<h2 style="margin-top:0">Why it matters</h2>
-<ul>
-<li><b>Hotels:</b> booking sites like Booking.com typically take around 15% commission (often 10-25%) on every booking. Guests who find your own website can book with you directly.</li>
-<li><b>Clinics and salons:</b> people check services, timings and location on their phone before they call. Without a website, they choose the business that has one.</li>
-<li>In the Kathmandu Valley, about 96% of the 11,700 named businesses on OpenStreetMap don't list a website. Being one that does makes you stand out.</li>
+<p class="eyebrow">What you get</p>
+<div class="price">Rs 9,999 <small>one-time</small></div>
+<ul class="ck">
+<li>A professional website with your photos, rooms or services, and prices</li>
+<li>Works perfectly on mobile phones</li>
+<li>WhatsApp and call buttons, plus a booking or appointment form that comes straight to your WhatsApp</li>
+<li>Google Maps directions and location</li>
+<li>Secure https, so no "Not secure" warning</li>
+<li>Free hosting, so no monthly fee to keep it online</li>
+<li>Help getting your domain: <b>.com.np is free</b> for Nepal-registered businesses, or a .com for about Rs 1,500 a year</li>
+<li>Changes for 30 days after launch</li>
 </ul>
-<p class="fine">Sources: Booking.com commission ranges from SiteMinder and Guesty 2026 guides. Business count from OpenStreetMap data pulled on 26 Nov 2026.</p>
+<p class="fine">Optional care plan: Rs 500/month for ongoing photo, price and text updates.</p>
 </div>
+<div class="card guar">
+<p class="eyebrow" style="color:var(--ok)">Zero-risk guarantee</p>
+<h2 style="font-size:30px">Pay nothing upfront.</h2>
+<p>I build your website first and put it online. You look at it on your own phone, ask for changes, and pay <b>only if you want to keep it</b>. If you don't like it, you owe nothing.</p>
+<ul class="ck">
+<li>No advance payment</li>
+<li>No contract, no monthly fee required</li>
+<li>Pay by eSewa, Khalti or bank transfer after launch</li>
+</ul>
+<a class="btn b1" href="#start" style="width:100%;justify-content:center">Start my free build →</a>
+</div>
+</div>
+</section>
 
-<div class="card">
-<h2 style="margin-top:0">How it works</h2>
-<ol>
-<li>Look at your free preview (sent to you by email).</li>
-<li>Send your photos, rooms or services, and prices on WhatsApp or by email, and pay the 50% advance.</li>
-<li>Your site goes live within 48 hours. Check it, and pay the rest when you're happy.</li>
-</ol>
+<section>
+<p class="eyebrow">How it works</p>
+<h2>Three steps. About 48 hours.</h2>
+<div class="g3" style="margin-top:24px">
+<div class="card step"><b>1</b><h3>Send your details</h3><p>Photos, rooms or services, and prices. On WhatsApp or by email, 10 minutes of your time.</p></div>
+<div class="card step"><b>2</b><h3>I build it</h3><p>Your website goes online within 48 hours. Check it on your phone and ask for any changes.</p></div>
+<div class="card step"><b>3</b><h3>Happy? Then pay.</h3><p>Pay Rs 9,999 only once you're happy. Then I connect your own domain.</p></div>
 </div>
+</section>
+
+<section id="start">
+<div class="card" style="text-align:center;padding:40px 24px">
+<h2>Ready for your website?</h2>
+<p class="lead" style="margin:0 auto 22px">Reply to my email, or write to me. Tell me your business name and I'll start today.</p>
+<div class="cta" style="justify-content:center">
+<a class="btn b1" id="mail" href="mailto:gautamsagar2040@gmail.com?subject=I%20want%20my%20website">Email me: gautamsagar2040@gmail.com</a>
+</div>
+</div>
+</section>
+
+<section>
+<p class="eyebrow">Questions</p><h2>FAQ</h2>
+<details><summary>Do I really pay nothing upfront?</summary><p>Yes. I build it and put it online first. You pay only if you want to keep it. I can offer this because building a site takes me hours, not weeks.</p></details>
+<details><summary>Who are you?</summary><p>I'm Sagar, a web developer in Kathmandu. I'm starting this service now, so the previews I've made are my portfolio, and that's why you pay only after you've seen the result.</p></details>
+<details><summary>Do I need my own domain?</summary><p>No, it can start on a free address. For your own name, a .com.np is free for Nepal-registered businesses (I'll help with the application), or a .com costs about Rs 1,500 a year.</p></details>
+<details><summary>Are there monthly fees?</summary><p>No. Hosting is free. The Rs 500/month care plan is optional, if you want me to keep updating photos and prices.</p></details>
+<details><summary>Can guests pay online?</summary><p>The standard site sends booking requests to your WhatsApp or email, and you confirm with the guest. Online payment or a live booking engine can be added later for an extra quote.</p></details>
+<details><summary>Will it show on Google?</summary><p>Yes. It's built to be Google-friendly (titles, descriptions, map), and I'll show you how to link it from your Google Business profile. No one can honestly promise you the #1 position, and I won't.</p></details>
+</section>
 <footer>Sagar · Web developer, Kathmandu · <a href="mailto:gautamsagar2040@gmail.com">gautamsagar2040@gmail.com</a></footer>
 </div>
+<script>
+const f = n => "Rs " + Math.round(n).toLocaleString("en-IN");
+const v = id => Math.max(0, parseFloat(document.getElementById(id).value) || 0);
+function calc(){
+ const nights = v("rooms") * 30 * v("occ")/100, rev = nights * v("rate"), comm = rev * v("ota")/100 * v("com")/100;
+ const saved = comm * 12 * v("shift")/100, months = saved > 0 ? 9999 / (saved/12) : Infinity;
+ o1.textContent = f(comm); o2.textContent = f(comm*12); o3.textContent = f(saved);
+ o4.textContent = isFinite(months) ? (months < 1 ? "under 1 month" : Math.ceil(months) + " month" + (Math.ceil(months) > 1 ? "s" : "")) : "–";
+}
+document.querySelectorAll(".calc input").forEach(i => i.addEventListener("input", calc)); calc();
+const from = new URLSearchParams(location.search).get("from");
+if (from) fetch("data.json").then(r=>r.json()).then(D=>{ const b = D[from]; if(!b) return;
+ const hi = document.getElementById("hi"); hi.style.display = "block";
+ hi.textContent = `Namaste ${b.name}! Your preview is ready. Reply "yes" and I'll put it online with your real photos, and you pay nothing until you're happy.`;
+ document.getElementById("mail").href = `mailto:gautamsagar2040@gmail.com?subject=${encodeURIComponent("Yes - website for " + b.name)}&body=${encodeURIComponent("Hi Sagar, I'd like the website for " + b.name + ". My phone/WhatsApp: ")}`;
+});
+</script>
 </body>
 </html>
